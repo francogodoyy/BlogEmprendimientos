@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-22(0+p#^#)_3fjc8bq@8b#e1l@za7&tzzu9d)!0u6a4(j*nizz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blogemprendimientos.pythonanywhere.com']
 
 
 # Application definition
@@ -94,8 +94,12 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'BlogEmprendimien$default',
+        'USER': 'BlogEmprendimien',
+        'PASSWORD': 'baiker11',
+        'HOST': 'BlogEmprendimientos.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 
